@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottom_dock"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#151515"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="8dp"
+        app:strokeColor="#292929"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:tabBackground="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabIconTint="@color/tab_tint"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="stretch"
+            app:tabIndicatorColor="#24211C"
+            app:tabMode="fixed"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabTextAppearance="@style/CustomTabTextAppearance"
+            app:tabTextColor="@color/tab_tint" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
